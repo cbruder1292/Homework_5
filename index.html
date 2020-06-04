@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+
+    <div class="container">
+      <table class="table"> 
+        <tbody>
+          <tr class="row">
+            <td class="col-2 hour">9 AM</td>
+            <td id = "nineAM" class="col-8"> <textarea data-time="0" id ="input0" type=""></textarea></td>
+            <td class="col-2 bg-info text-white saveBtn"><button  value="input0" class="button">Save</button></td>
+          </tr>
+          <tr class="row">
+              <td class="col-2 hour">10 AM</td>
+              <td id = "tenAM" class="col-8"><textarea data-time="1" id="input1" type=""></textarea></td>
+              <td class="col-2 bg-info text-white saveBtn"><button value="input1" class="button">Save</button></td>
+            </tr>
+          <tr class="row">
+              <td class="col-2 hour">11 AM</td>
+              <td id = "elevenAM" class="col-8"><textarea data-time="2" id="input2"></textarea></td>
+              <td class="col-2 bg-info text-white saveBtn"><button value="input2"  class="button">Save</button></td>
+            </tr>
+          <tr class="row">
+              <td class="col-2 hour">12 PM</td>
+              <td id = "twelvePM" class="col-8"><textarea data-time="3" id="input3"></textarea></td>
+              <td class="col-2 bg-info text-white saveBtn"><button value="input3"  class="button">Save</button></td>
+            </tr>
+            <tr class="row">
+              <td class="col-2 hour">1 PM</td>
+              <td id = "onePM" class="col-8"><textarea data-time="4" id="input4"></textarea></td>
+              <td class="col-2 bg-info text-white saveBtn"><button value="input4" class="button">Save</button></td>
+            </tr>
+              <tr class="row">
+                  <td class="col-2 hour">2 PM</td>
+                  <td id = "twoPM" class="col-8"><textarea data-time="5"id="input5"></textarea></td>
+                  <td class="col-2 bg-info text-white saveBtn"><button value="input5" class="button">Save</button></td>
+                </tr>
+              <tr class="row">
+                  <td class="col-2 hour">3 PM</td>
+                  <td id = "threePM" class="col-8"><textarea data-time="6" id="input6"></textarea></td>
+                  <td class="col-2 bg-info text-white saveBtn"><button value="input6" class="button">Save</button></td>
+                </tr>
+              <tr class="row">
+                  <td class="col-2 hour">4 PM</td>
+                  <td id = "fourPM" class="col-8"><textarea data-time="7" id="input7"></textarea></td>
+                  <td class="col-2 bg-info text-white saveBtn"><button value="input7"  class="button">Save</button></td>
+                </tr>
+              <tr class="row">
+                  <td class="col-2 hour">5 PM</td>
+                  <td id = "fivePM" class="col-8"><textarea data-time="8" id="input8"></textarea></td>
+                  <td class="col-2 bg-info text-white saveBtn"><button value="input8"  class="button">Save</button></td>
+                </tr>
+                          
+      </table>
+    </div>
+      
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
